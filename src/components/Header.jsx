@@ -10,9 +10,8 @@ export default function Header() {
     <header className="shadow sticky z-50 top-0">
       <nav className="bg-white border-gray-200 px-4 lg:px-6 py-2.5">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <div>
-            <Link to="/" className="flex items-center">
-              <button className={`h-[25px] lg:hidden ${isBtnClicked&&'rotate-90'}`} onClick={btnClickHandler}>
+          <div className="flex items-center">
+          <button className={`h-[25px] lg:hidden ${isBtnClicked&&'rotate-90'}`} onClick={btnClickHandler}>
                 <svg
                   width="100%"
                   height="100%"
@@ -41,6 +40,7 @@ export default function Header() {
                   </defs>
                 </svg>
               </button>
+            <Link to="/" className="flex items-center">
               <img
                 src="https://alexharkness.com/wp-content/uploads/2020/06/logo-2.png"
                 className="h-12"
